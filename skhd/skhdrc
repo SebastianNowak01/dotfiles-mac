@@ -1,0 +1,53 @@
+# Changing window focus
+
+# within a Space
+ctrl + cmd - j : yabai -m window --focus south
+ctrl + cmd - k : yabai -m window --focus north
+ctrl + cmd - h : yabai -m window --focus west
+ctrl + cmd - l : yabai -m window --focus east
+
+# between external displays (subject to change)
+ctrl + cmd - a : yabai -m display --focus west
+ctrl + cmd - e : yabai -m display --focus east
+
+# Rotate layout clockwise
+cmd + shift - e : yabai -m space --rotate 270
+cmd + shift - r : yabai -m space --rotate 90
+
+# Flip along axes
+alt + shift - e : yabai -m space --mirror y-axis
+alt + shift - r : yabai -m space --mirror x-axis
+
+# Toggle window float
+ctrl + cmd - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# Maximize a window
+cmd + ctrl - m : yabai -m window --toggle zoom-fullscreen
+
+# Balance a tree of windows
+alt + shift - b : yabai -m space --balance
+
+# Swap windows
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - h : yabai -m window --swap west
+alt + shift - l : yabai -m window --swap east
+
+# Move window to another display
+#alt + shift - s : yabai -m window --display west ; yabai -m display --focus west;
+#alt + shift - g : yabai -m window --display east ; yabai -m display --focus east
+
+# Launch iTerm
+cmd - return : open -n /Applications/iTerm.app
+
+# Move windows between spaces
+cmd + shift - 1 : yabai -m window --space 1
+cmd + shift - 2 : yabai -m window --space 2
+cmd + shift - 3 : yabai -m window --space 3
+cmd + shift - 4 : yabai -m window --space 4
+cmd + shift - 5 : yabai -m window --space 5
+cmd + shift - 6 : yabai -m window --space 6
+cmd + shift - 7 : yabai -m window --space 7
+cmd + shift - 8 : yabai -m window --space 8
+cmd + shift - 9 : yabai -m window --space 9
+cmd + shift - 0 : yabai -m window --space 10
